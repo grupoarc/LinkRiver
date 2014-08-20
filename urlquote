@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+import sys
+import urllib
+
+if __name__ == '__main__':
+    line = ''.join(sys.stdin.readlines())  # join lines
+    line = line.translate(None, ' \n')       # nuke spaces
+    #line = urllib.quote(line, '(){}:"\';=,/')     # quote unsafe characters
+    print(line)
